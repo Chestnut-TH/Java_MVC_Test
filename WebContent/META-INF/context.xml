@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <Resource name="jdbc/modelMVC" auth="Container"
+        type="javax.sql.DataSource" maxTotal="5" maxIdle="30"
+        maxWaitMillis="10000" username="suser" password="spass"
+        driverClassName="com.mysql.jdbc.Driver" useSSL="false"
+        url="jdbc:mysql://localhost:3306/company_db?serverTimezone=UTC" />
+</Context>

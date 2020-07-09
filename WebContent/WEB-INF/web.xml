@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+    id="WebApp_ID" version="4.0">
+    <display-name>Java_MVC_Test</display-name>
+
+    <servlet>
+    <servlet-name>SearchServlet</servlet-name>
+    <servlet-class>info.modelMVC.test.SearchServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>EditServlet</servlet-name>
+        <servlet-class>info.modelMVC.test.EditServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>
+    SearchServlet
+    </servlet-name>
+    <url-pattern>
+    /Search
+    </url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>EditServlet</servlet-name>
+        <url-pattern>/Edit</url-pattern>
+    </servlet-mapping>
+
+</web-app>
